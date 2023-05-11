@@ -7,11 +7,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          iconTheme: IconThemeData(color: Colors.pink)
+        ),
+      ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My First app')
+          title: const Text('My First App')
         ),
-       body:  Text('Body')
+       body:  const Text('Body')
       ),
     );
   }
