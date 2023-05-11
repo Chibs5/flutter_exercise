@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Homepage()
+      debugShowCheckedModeBanner: false,
+      home:  Homepage()
     );
   }
 }
 
 class Homepage extends StatelessWidget {
-  const Homepage({super.key});
+  const Homepage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,9 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('My First App'),
       ),
-      body: ,
+      body: Center(
+        child: const Text('Hello')
+      ),
     );
   }
 }
