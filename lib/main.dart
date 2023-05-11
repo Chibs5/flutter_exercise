@@ -6,7 +6,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      home: const Homepage()
+    );
+  }
+}
+
+class Homepage extends StatelessWidget {
+  const Homepage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('My First App'),
+      ),
+      body: ,
+    );
+  }
+}
+
+/*
+ debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           iconTheme: IconThemeData(color: Colors.pink)
@@ -18,6 +38,4 @@ class MyApp extends StatelessWidget {
         ),
        body:  const Text('Body')
       ),
-    );
-  }
-}
+*/
